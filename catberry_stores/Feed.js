@@ -43,6 +43,18 @@ class Feed {
 
     this.$context.changed();
   }
+
+  handleUpdateComment(commentId, text) {
+    this.hashWithComments[commentId].text = text;
+
+    this.$context.changed();
+  }
+
+  handleSetLikeForComment(commentId) {
+    this.hashWithComments[commentId].likes++;
+
+    this.$context.changed();
+  }
 }
 
 module.exports = Feed;

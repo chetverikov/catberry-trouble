@@ -1,37 +1,88 @@
-# Catberry Empty Project
-
-![Catberry](https://raw.githubusercontent.com/catberry/catberry/master/docs/images/logo.png)
-
 ## How to use
 
-This application only shows "Hello, world!" page.
-
-First of all, it is needed to install dependencies:
+Clone repository and install packages
 
 ```
-npm install -- production
+npm install
 ```
 
-Then to start in `debug` mode without script minification and with watching for changes:
+Start in debug mode
 
 ```
 npm run debug
 ```
 
-To start in `release` mode:
+Open browser
 
 ```
-npm start
+http://localhost:3000
 ```
 
-## Contributing
+And update a review/comment or set like for a comment in the Developers Console
 
-There are a lot of ways to contribute into Catberry:
+```
+window.feedStore.handleUpdateReview('faba08c9-83b8-4dd6-8e5d-c4e08d837605', 'New text');
+window.feedStore.handleUpdateComment('c6156287-0d06-433c-9829-48f9ca4db99e', 'New text for comment');
+window.feedStore.handleSetLikeForComment('c6156287-0d06-433c-9829-48f9ca4db99e');
 
-* Give it a star
-* Join the [Gitter](https://gitter.im/catberry/main) room and leave a feedback or help with answering users' questions
-* [Submit a bug or a feature request](https://github.com/catberry/catberry/issues)
-* [Submit a PR](https://github.com/catberry/catberry/blob/8.0.0-dev/CONTRIBUTING.md)
-* If you like the logo, you might want to buy a Catberry [T-Shirt](http://www.redbubble.com/people/catberryjs/works/14439373-catberry-js-framework-logo?p=t-shirt) or a [sticker](http://www.redbubble.com/people/catberryjs/works/14439373-catberry-js-framework-logo?p=sticker)
+```
 
-Denis Rechkunov <denis.rechkunov@gmail.com>
+And in console...
+
+```
+Component "CAT-FEED" is being rendered...
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-COMMENT" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-REVIEW" is unbound
+Logger.js:28 Component "CAT-FEED" is unbound
+(10)Logger.js:28 Component "CAT-REVIEW" is being rendered...
+(10)Logger.js:26 Review render.
+(24)Logger.js:28 Component "CAT-COMMENT" is being rendered...
+Logger.js:28 Component "CAT-REVIEW" rendered (21 ms)
+(2)Logger.js:28 Component "CAT-REVIEW" rendered (20 ms)
+(3)Logger.js:28 Component "CAT-REVIEW" is bound
+(4)Logger.js:28 Component "CAT-COMMENT" rendered (17 ms)
+(6)Logger.js:28 Component "CAT-COMMENT" rendered (16 ms)
+(7)Logger.js:28 Component "CAT-COMMENT" rendered (15 ms)
+(7)Logger.js:28 Component "CAT-COMMENT" rendered (14 ms)
+(24)Logger.js:28 Component "CAT-COMMENT" is bound
+(2)Logger.js:28 Component "CAT-REVIEW" rendered (44 ms)
+(5)Logger.js:28 Component "CAT-REVIEW" rendered (43 ms)
+(7)Logger.js:28 Component "CAT-REVIEW" is bound
+Logger.js:28 Component "CAT-FEED" rendered (73 ms)
+Logger.js:28 Component "CAT-FEED" is bound
+Logger.js:28 Document updated (1 store(s) changed)
+```
+
+All review/comments components has been re-render...
