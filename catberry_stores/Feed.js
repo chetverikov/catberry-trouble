@@ -38,7 +38,7 @@ class Feed {
     }
   }
 
-  updateReview(reviewId, text) {
+  handleUpdateReview(reviewId, text) {
     this.hashWithReviews[reviewId].text = text;
 
     this.$context.changed();
