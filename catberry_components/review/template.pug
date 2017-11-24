@@ -1,0 +1,7 @@
+div.review-block
+  p= review.text
+
+  div.comments-block
+    for comment in review.comments
+      cat-comment(comment-id=comment.id, cat-store='Feed')
+

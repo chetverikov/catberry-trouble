@@ -1,0 +1,5 @@
+{
+  "name": "head",
+  "template": "./head.pug",
+  "logic": "./Head.js"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "comment",
+  "template": "./template.pug",
+  "errorTemplate": "./error.pug"
+}

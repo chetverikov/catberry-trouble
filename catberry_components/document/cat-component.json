@@ -1,0 +1,5 @@
+{
+  "name": "document",
+  "template": "./document.pug",
+  "logic": "./Document.js"
+}

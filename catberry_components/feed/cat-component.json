@@ -1,0 +1,5 @@
+{
+  "name": "feed",
+  "template": "./template.pug",
+  "errorTemplate": "./error.pug"
+}
