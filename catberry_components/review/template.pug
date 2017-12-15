@@ -3,5 +3,9 @@ div.review-block
 
   div.comments-block
     for comment in review.comments
-      cat-comment(comment-id=comment.id, cat-store='Feed')
+      cat-comment(
+        cat-store-param-comment-id=comment.id,
+        cat-store-param-instance-id=reviewStoreInstanceId,
+        cat-store='Dynamic/Comment'
+      )
 

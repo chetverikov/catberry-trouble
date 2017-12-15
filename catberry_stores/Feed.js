@@ -38,22 +38,12 @@ class Feed {
     }
   }
 
-  handleUpdateReview(reviewId, text) {
-    this.hashWithReviews[reviewId].text = text;
-
-    this.$context.changed();
+  handleUpdateReview(reviewId, data) {
+    Object.assign(this.hashWithReviews[reviewId], data);
   }
 
-  handleUpdateComment(commentId, text) {
-    this.hashWithComments[commentId].text = text;
-
-    this.$context.changed();
-  }
-
-  handleSetLikeForComment(commentId) {
-    this.hashWithComments[commentId].likes++;
-
-    this.$context.changed();
+  handleUpdateComment(commentId, data) {
+    Object.assign(this.hashWithComments[commentId], data);
   }
 }
 

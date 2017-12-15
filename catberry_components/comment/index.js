@@ -1,10 +1,17 @@
 class Comment {
 
   render() {
-    const commentId = this.$context.attributes['comment-id'];
+    return this.$context.getStoreData().then(comment => ({comment}));
+  }
 
-    return this.$context.getStoreData()
-      .then(data => ({comment: data.hashWithComments[commentId]}));
+  bind() {
+    return {
+      click: {
+        button: () => {
+          this.$context.sendAction('like');
+        }
+      }
+    }
   }
 }
 
